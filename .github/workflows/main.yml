@@ -1,16 +1,10 @@
-name: CodeDeploy staging
+name: Code Deploy
 
 on:
   workflow_dispatch:
     inputs:
-      application_name:
-        type: choice
-        required: true
-        options:
-          - api
-          - client
-      application_repository_ref:
-        description: application repository ref (branch or tag or commit-hash)
+      key_test:
+        description: input key
         type: string
         required: true
 
